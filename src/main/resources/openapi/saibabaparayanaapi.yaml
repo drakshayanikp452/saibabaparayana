@@ -1,0 +1,111 @@
+openapi: 3.0.3
+info:
+  title: Sri Sai Baba Satcharitra Parayana - API
+  description: Sri Sai Baba Satcharitra Parayana - Daily Tracking Parayana System.
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: saibabasatcharitraparayana@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+servers:
+  - url: https://saibabasatcharitraparayana/
+tags:
+  - name: Parayana
+    description: Sri Sai Baba Parayana Groups.
+
+paths:
+  /groups:
+    get:
+      tags:
+        - Parayana
+      summary: Fetch Parayana Groups
+      description: Fetch Sri Sai Baba Satcharitra Parayana Groups.
+      operationId: fetch_groups
+      responses:
+        '200':
+          description: list of groups
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/group_response'
+        '400':
+          description: Invalid request Error
+        '500':
+          description: Internal Server Error
+
+  /roles:
+    get:
+      tags:
+        - Daily Parayana
+      summary: Fetch Parayana Roles
+      description: Fetch Sri Sai Baba Satcharitra Parayana Roles.
+      operationId: fetch_roles
+      responses:
+        '200':
+          description: list of roles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/role_response'
+        '400':
+          description: Invalid request Error
+        '500':
+          description: Internal Server Error
+
+components:
+  schemas:
+    group_response:
+      type: object
+      properties:
+        group_id:
+          type: string
+          example: Group100
+        name:
+          type: string
+          example: group1
+        created_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_user:
+          type: string
+          example: Sai Baba
+        last_updated_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        last_updated_user:
+          type: string
+          example: Sai Baba
+
+    role_response:
+      type: object
+      properties:
+        role_id:
+          type: string
+          example: Group100
+        name:
+          type: string
+          example: group1
+        created_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_user:
+          type: string
+          example: Sai Baba
+        last_updated_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        last_updated_user:
+          type: string
+          example: Sai Baba
+ 
+ 

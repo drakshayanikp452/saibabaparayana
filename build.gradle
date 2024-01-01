@@ -1,0 +1,78 @@
+import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.1'
+	id 'io.spring.dependency-management' version '1.1.4'
+	id "org.openapi.generator" version "7.0.1"
+}
+
+group = 'com.saibaba'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '21'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+sourceSets{
+	main{
+		java{
+			srcDirs = ['src/main/java','src/main-gen/java','build/generated/src/main/java']
+		}
+	}
+}
+dependencies {
+	//Open API  configurations start
+	implementation group: 'org.openapitools', name: 'jackson-databind-nullable', version: '0.2.6'
+	implementation group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.2'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+	implementation 'io.swagger.core.v3:swagger-annotations:2.2.12'
+	implementation 'io.swagger.core.v3:swagger-models:2.2.13'
+	compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+	//Open API  configurations End
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+task customOpenApiGenerate {
+	ext.generate = { taskName, inputFile ->
+		tasks.register(taskName, GenerateTask) {
+			tasks.getByPath(taskName).generatorName.set("spring")
+			tasks.getByPath(taskName).library.set("spring-boot")
+			tasks.getByPath(taskName).inputSpec.set("$rootDir/src/main/resources/openapi/$inputFile")
+			tasks.getByPath(taskName).outputDir.set("$rootDir/src/main-gen/java")
+			tasks.getByPath(taskName).apiPackage.set("com.saibaba.api")
+			tasks.getByPath(taskName).invokerPackage.set("com.saibaba.invoker")
+			tasks.getByPath(taskName).modelPackage.set("com.saibaba.model")
+			tasks.getByPath(taskName).configOptions.set([
+					dateLibrary         : "java8",
+					interfaceOnly       : "true",
+					serializationLibrary: "true",
+					serilizationModel   : "true",
+					serilizationLibrary : "jackson",
+					delegatePattern     : "false"
+			])
+		}
+		tasks.compileJava.dependsOn(taskName)
+	}
+}
+
+customOpenApiGenerate.generate('saibabaApiGenerator','saibabaparayanaapi.yaml')
