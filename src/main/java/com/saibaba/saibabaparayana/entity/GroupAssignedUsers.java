@@ -22,7 +22,7 @@ public class GroupAssignedUsers {
     @Column (name = "group_id", nullable = false)
     private Long groupId;
 
-    @Column (name = "last_updated_user", nullable = false)
+    @Column (name = "last_updated_date", nullable = false)
     private Date lastUpdatedDate;
 
 
