@@ -16,7 +16,7 @@ public class GroupAssignedUsersApiService {
     private GroupAssignedUsersRepository groupAssignedUsersRepository;
 
     public List<GroupUserResponse> fetchGroupUsers(Long groupId) {
-        List<GroupAssignedUsers> groupAssignedUsersList = groupAssignedUsersRepository.findAll();
+        List<GroupAssignedUsers> groupAssignedUsersList = groupAssignedUsersRepository.findByGroupId(groupId);
         List<GroupUserResponse> groupUserResponseList = new ArrayList<>();
         groupAssignedUsersList.forEach(user -> groupUserResponseList.add(GroupUserResponseMapper.INSTANCE.groupAssignedUserToDto(user)));
         return groupUserResponseList;
