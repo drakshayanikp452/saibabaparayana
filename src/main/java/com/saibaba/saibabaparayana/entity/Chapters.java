@@ -17,7 +17,7 @@ public class Chapters {
     @Column (name = "chapter_id", nullable = false)
     private Long id;
     @Column (name = "chapter_name", nullable = false)
-    private String chapterName;
+    private String name;
 
     @Column (name = "created_date", nullable = false)
     private Date createdDate;

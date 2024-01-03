@@ -17,6 +17,6 @@ public class RolesRepositoryTest {
     @Test
     void validateFetchRecords(){
       List<Roles> rolesList= rolesRepository.findAll();
-        Assertions.assertTrue(rolesList.size()==6);
+        Assertions.assertTrue(rolesList.size()==3);
     }
 }

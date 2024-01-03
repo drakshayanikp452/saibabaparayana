@@ -40,7 +40,7 @@ paths:
   /roles:
     get:
       tags:
-        - Daily Parayana
+        - Parayana
       summary: Fetch Parayana Roles
       description: Fetch Sri Sai Baba Satcharitra Parayana Roles.
       operationId: fetch_roles
@@ -53,6 +53,26 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/role_response'
+        '400':
+          description: Invalid request Error
+        '500':
+          description: Internal Server Error
+  /chapters:
+    get:
+      tags:
+        - Parayana
+      summary: Fetch Parayana Chapters
+      description: Fetch Sri Sai Baba Satcharitra Parayana Chapters.
+      operationId: fetch_chapters
+      responses:
+        '200':
+          description: list of chapters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/chapter_response'
         '400':
           description: Invalid request Error
         '500':
@@ -107,5 +127,27 @@ components:
         last_updated_user:
           type: string
           example: Sai Baba
- 
- 
+
+    chapter_response:
+      type: object
+      properties:
+        chapter_id:
+          type: string
+          example: 1
+        name:
+          type: string
+          example: Sai Satcharitra - Ch - 1
+        created_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_user:
+          type: string
+          example: Sai Baba
+        last_updated_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        last_updated_user:
+          type: string
+          example: Sai Baba

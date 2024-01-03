@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS CHAPTERS
 (
     chapter_id bigint NOT NULL,
-    chapter_name character varying COLLATE pg_catalog.default NOT NULL
+    chapter_name character varying COLLATE pg_catalog.default NOT NULL,
     created_date date NOT NULL,
     last_updated_date date NOT NULL,
     created_user character varying COLLATE pg_catalog.default NOT NULL,
