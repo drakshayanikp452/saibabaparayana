@@ -147,4 +147,135 @@ VALUES (1, 'Sai Satcharitra - Ch - 1', '2024-01-02', '2024-01-02', 'system', 'sy
 
 INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
 VALUES (2, 'Sai Satcharitra - Ch - 2', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (3, 'Sai Satcharitra - Ch - 3', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (4, 'Sai Satcharitra - Ch - 4', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (5, 'Sai Satcharitra - Ch - 5', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (6, 'Sai Satcharitra - Ch - 6', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (7, 'Sai Satcharitra - Ch - 7', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (8, 'Sai Satcharitra - Ch - 8', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (9, 'Sai Satcharitra - Ch - 9', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (10, 'Sai Satcharitra - Ch - 10', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (11, 'Sai Satcharitra - Ch - 11', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (12, 'Sai Satcharitra - Ch - 12', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (13, 'Sai Satcharitra - Ch - 13', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (14, 'Sai Satcharitra - Ch - 14', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (15, 'Sai Satcharitra - Ch - 15', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (16, 'Sai Satcharitra - Ch - 16-17', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (17, 'Sai Satcharitra - Ch - 18-19', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (18, 'Sai Satcharitra - Ch - 20', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (19, 'Sai Satcharitra - Ch - 21', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (20, 'Sai Satcharitra - Ch - 22', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (21, 'Sai Satcharitra - Ch - 23', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (22, 'Sai Satcharitra - Ch - 24', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (23, 'Sai Satcharitra - Ch - 25', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (24, 'Sai Satcharitra - Ch - 26', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (25, 'Sai Satcharitra - Ch - 27', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (26, 'Sai Satcharitra - Ch - 28', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (27, 'Sai Satcharitra - Ch - 29', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (28, 'Sai Satcharitra - Ch - 30', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (29, 'Sai Satcharitra - Ch - 31', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (30, 'Sai Satcharitra - Ch - 32', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (31, 'Sai Satcharitra - Ch - 33', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (32, 'Sai Satcharitra - Ch - 34', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (33, 'Sai Satcharitra - Ch - 35', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (34, 'Sai Satcharitra - Ch - 36', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (35, 'Sai Satcharitra - Ch - 37', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (36, 'Sai Satcharitra - Ch - 38', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (37, 'Sai Satcharitra - Ch - 39', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (38, 'Sai Satcharitra - Ch - 40', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (39, 'Sai Satcharitra - Ch - 41', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (40, 'Sai Satcharitra - Ch -42', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (41, 'Sai Satcharitra - Ch - 43-44', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (42, 'Sai Satcharitra - Ch - 45', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (43, 'Sai Satcharitra - Ch - 46', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (44, 'Sai Satcharitra - Ch - 47', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (45, 'Sai Satcharitra - Ch - 48', '2024-01-02', '2024-01-02', 'system', 'system');
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+ VALUES (46, 'Sai Satcharitra - Ch - 49', '2024-01-02', '2024-01-02', 'system', 'system');
+ INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+ VALUES (47, 'Sai Satcharitra - Ch - 50', '2024-01-02', '2024-01-02', 'system', 'system');
+ INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+ VALUES (48, 'Sai Satcharitra - Ch - 51(Epilogue),Aarti', '2024-01-02', '2024-01-02', 'system', 'system');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
