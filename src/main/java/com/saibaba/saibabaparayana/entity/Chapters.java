@@ -19,14 +19,6 @@ public class Chapters {
     @Column (name = "chapter_name", nullable = false)
     private String chapterName;
 
-    @Column (name = "audio", nullable = false)
-    @Lob
-    private Byte[] audio;
-
-    @Lob
-    @Column (name = "pdf", nullable = false)
-    private Byte[] pdf;
-
     @Column (name = "created_date", nullable = false)
     private Date createdDate;
 

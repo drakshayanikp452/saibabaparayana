@@ -130,13 +130,6 @@ INSERT INTO TRACK_DAILY_PARAYANA (track_daily_parayana_id, user_id, group_id, da
 VALUES (5, 1, 1, '2023-10-25', 3, 1, CURRENT_DATE, CURRENT_DATE, 'system', 'system');
 
 
-
-
-
-
-
-
-
 --GROUP_ASSIGNED_USERS
 
 INSERT INTO GROUP_ASSIGNED_USERS (group_ass_user_id, created_date, group_id, last_updated_date, user_id, created_user, last_updated_user)
@@ -145,4 +138,13 @@ VALUES (1, CURRENT_DATE, 1, CURRENT_DATE, 1, 'system', 'system');
 INSERT INTO GROUP_ASSIGNED_USERS (group_ass_user_id, created_date, group_id, last_updated_date, user_id, created_user, last_updated_user)
 VALUES (2, CURRENT_DATE, 2, CURRENT_DATE, 2, 'system', 'system'); 
 INSERT INTO GROUP_ASSIGNED_USERS (group_ass_user_id, created_date, group_id, last_updated_date, user_id, created_user, last_updated_user)
-VALUES (3, CURRENT_DATE, 3, CURRENT_DATE, 3, 'system', 'system'); 
+VALUES (3, CURRENT_DATE, 3, CURRENT_DATE, 3, 'system', 'system');
+
+-- CHAPTERS
+
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (1, 'Sai Satcharitra - Ch - 1', '2024-01-02', '2024-01-02', 'system', 'system');
+
+INSERT INTO CHAPTERS (chapter_id, chapter_name, created_date, last_updated_date, created_user, last_updated_user)
+VALUES (2, 'Sai Satcharitra - Ch - 2', '2024-01-02', '2024-01-02', 'system', 'system');
+
