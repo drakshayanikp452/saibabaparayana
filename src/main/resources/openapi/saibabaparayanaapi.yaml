@@ -77,6 +77,33 @@ paths:
           description: Invalid request Error
         '500':
           description: Internal Server Error
+  /groups/{groupId}/users:
+    get:
+      tags:
+        - Parayana
+      summary: Fetch group users
+      description: Fetch Sri Sai Baba Satcharitra Parayana group users.
+      operationId: fetch_group_users
+      parameters:
+        - in: path
+          name: groupId
+          schema:
+            type: long
+          required: true
+          description: Numeric ID of the group
+      responses:
+        '200':
+          description: list of users in a group
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/group_user_response'
+        '400':
+          description: Invalid request Error
+        '500':
+          description: Internal Server Error
 
 components:
   schemas:
@@ -137,6 +164,32 @@ components:
         name:
           type: string
           example: Sai Satcharitra - Ch - 1
+        created_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_user:
+          type: string
+          example: Sai Baba
+        last_updated_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        last_updated_user:
+          type: string
+          example: Sai Baba
+    group_user_response:
+      type: object
+      properties:
+        group_ass_user_id:
+          type: string
+          example: 10
+        group_id:
+          type: string
+          example: 1
+        user_id:
+          type: string
+          example: 1
         created_date:
           type: string
           format: date

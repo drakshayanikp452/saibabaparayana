@@ -40,11 +40,4 @@ public class TrackDailyParayana {
     private String createdUser;
     @Column (name = "last_updated_user", nullable = false)
     private String lastUpdatedUser;
-
-
-
-
-
-
-
 }
