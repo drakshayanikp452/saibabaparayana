@@ -11,5 +11,5 @@ public interface RoleResponseMapper {
     RoleResponseMapper INSTANCE= Mappers.getMapper(RoleResponseMapper.class);
 
     @Mapping(source = "id",target = "roleId")
-    RoleResponse rolesToRoleResponse(Roles roles);
+    RoleResponse entityToDTO(Roles roles);
 }

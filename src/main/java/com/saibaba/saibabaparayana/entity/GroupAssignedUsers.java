@@ -3,7 +3,7 @@ package com.saibaba.saibabaparayana.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -17,13 +17,13 @@ public class GroupAssignedUsers {
     private Long id;
 
     @Column (name = "created_date", nullable = false)
-    private Date createdDate;
+    private LocalDate createdDate;
 
     @Column (name = "group_id", nullable = false)
     private Long groupId;
 
     @Column (name = "last_updated_date", nullable = false)
-    private Date lastUpdatedDate;
+    private LocalDate lastUpdatedDate;
 
 
     @Column (name = "user_id", nullable = false)

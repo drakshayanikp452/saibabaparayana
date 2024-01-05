@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class ChaptersApiController implements ChaptersApi {
@@ -18,6 +17,6 @@ public class ChaptersApiController implements ChaptersApi {
     @Override
     public ResponseEntity<List<ChapterResponse>> fetchChapters() {
         List<ChapterResponse> chapterResponseList = chaptersApiService.fetchChapters();
-        return ResponseEntity.of(Optional.ofNullable(chapterResponseList));
+        return ResponseEntity.ofNullable(chapterResponseList);
     }
 }

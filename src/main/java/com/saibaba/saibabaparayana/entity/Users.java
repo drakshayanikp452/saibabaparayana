@@ -4,7 +4,7 @@ package com.saibaba.saibabaparayana.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -23,10 +23,10 @@ public class Users {
     private Long roleId;
 
     @Column (name = "created_date", nullable = false)
-    private Date createdDate;
+    private LocalDate createdDate;
 
     @Column (name = "last_updated_date", nullable = false)
-    private  Date last_updated_date;
+    private LocalDate last_updated_date;
 
     @Column (name = "created_user", nullable = false)
     private String createdUser;

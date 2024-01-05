@@ -11,5 +11,5 @@ public interface ChapterResponseMapper {
     ChapterResponseMapper INSTANCE = Mappers.getMapper(ChapterResponseMapper.class);
 
     @Mapping(source = "id", target = "chapterId")
-    ChapterResponse chapterToChapterResponse(Chapters chapters);
+    ChapterResponse entityToDTO(Chapters chapters);
 }

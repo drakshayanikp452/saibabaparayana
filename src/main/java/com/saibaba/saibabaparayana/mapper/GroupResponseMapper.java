@@ -9,6 +9,6 @@ import org.mapstruct.factory.Mappers;
 public interface GroupResponseMapper {
     GroupResponseMapper INSTANCE= Mappers.getMapper(GroupResponseMapper.class);
     @Mapping(source = "id",target = "groupId")
-    com.saibaba.model.GroupResponse groupsToGroupResponse(Groups groups);
+    com.saibaba.model.GroupResponse entityToDTO(Groups groups);
 
 }

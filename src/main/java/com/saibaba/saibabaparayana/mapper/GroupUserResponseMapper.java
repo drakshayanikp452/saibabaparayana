@@ -10,5 +10,5 @@ import org.mapstruct.factory.Mappers;
 public interface GroupUserResponseMapper {
     GroupUserResponseMapper INSTANCE= Mappers.getMapper(GroupUserResponseMapper.class);
     @Mapping(source ="id", target = "groupAssUserId")
-    GroupUserResponse groupAssignedUserToDto(GroupAssignedUsers groupAssignedUsers);
+    GroupUserResponse entityToDTO(GroupAssignedUsers groupAssignedUsers);
 }

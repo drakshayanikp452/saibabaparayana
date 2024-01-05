@@ -3,6 +3,7 @@ package com.saibaba.saibabaparayana.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -31,10 +32,10 @@ public class TrackDailyParayana {
     private String volunteer;
 
     @Column (name = "created_date", nullable = false)
-    private Date createdDate;
+    private LocalDate createdDate;
 
     @Column (name = "lastUpdatedDate", nullable = false)
-    private Date lastUpdatedDate;
+    private LocalDate lastUpdatedDate;
 
     @Column (name = "created_user", nullable = false)
     private String createdUser;

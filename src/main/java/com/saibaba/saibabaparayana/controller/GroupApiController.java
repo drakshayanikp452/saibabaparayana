@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class GroupApiController implements GroupsApi {
@@ -22,11 +21,11 @@ public class GroupApiController implements GroupsApi {
     @Override
     public ResponseEntity<List<GroupResponse>> fetchGroups() {
         List<GroupResponse> groupResponseList=groupsApiService.fetchGroups();
-        return  ResponseEntity.of(Optional.ofNullable(groupResponseList));
+        return  ResponseEntity.ofNullable(groupResponseList);
     }
 
     @Override
     public ResponseEntity<List<GroupUserResponse>> fetchGroupUsers(Long groupId) {
-        return ResponseEntity.of(Optional.ofNullable(groupAssignedUsersApiService.fetchGroupUsers(groupId)));
+        return ResponseEntity.ofNullable(groupAssignedUsersApiService.fetchGroupUsers(groupId));
     }
 }

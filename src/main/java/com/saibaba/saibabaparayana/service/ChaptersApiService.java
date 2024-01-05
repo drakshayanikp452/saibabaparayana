@@ -19,7 +19,7 @@ public class ChaptersApiService {
         List<Chapters> chaptersList = chaptersRepository.findAll();
         List<ChapterResponse> chapterResponseList = new ArrayList<>();
         chaptersList.forEach(chapter ->
-            chapterResponseList.add(ChapterResponseMapper.INSTANCE.chapterToChapterResponse(chapter))
+            chapterResponseList.add(ChapterResponseMapper.INSTANCE.entityToDTO(chapter))
         );
         return chapterResponseList;
     }

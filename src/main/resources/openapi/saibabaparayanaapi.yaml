@@ -88,7 +88,8 @@ paths:
         - in: path
           name: groupId
           schema:
-            type: long
+            type: integer
+            format: int64
           required: true
           description: Numeric ID of the group
       responses:
@@ -104,7 +105,34 @@ paths:
           description: Invalid request Error
         '500':
           description: Internal Server Error
-
+  /daily-assigned-chapters/groups/{groupId}/chapters:
+    get:
+      tags:
+        - Parayana
+      summary: Fetch group users
+      description: Fetch Sri Sai Baba Satcharitra Parayana daily assigned chapters.
+      operationId: fetch_assigned_chapters
+      parameters:
+        - in: path
+          name: groupId
+          schema:
+            type: integer
+            format: int64
+          required: true
+          description: Numeric ID of the group
+      responses:
+        '200':
+          description: list of daily assigned chapters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/assigned_chapters_response'
+        '400':
+          description: Invalid request Error
+        '500':
+          description: Internal Server Error
 components:
   schemas:
     group_response:
@@ -204,3 +232,37 @@ components:
         last_updated_user:
           type: string
           example: Sai Baba
+    assigned_chapters_response:
+      type: object
+      properties:
+        daily_assnd_chapter_id:
+          type: string
+          example: 10
+        group_id:
+          type: string
+          example: 1
+        user_id:
+          type: string
+          example: 1
+        chapterId:
+          type: string
+          example: 1
+        date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        created_user:
+          type: string
+          example: Sai Baba
+        last_updated_date:
+          type: string
+          format: date
+          example: 24-Oct-2023
+        last_updated_user:
+          type: string
+          example: Sai Baba
+

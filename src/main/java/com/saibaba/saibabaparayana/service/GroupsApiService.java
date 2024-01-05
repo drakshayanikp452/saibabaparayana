@@ -19,7 +19,7 @@ public class GroupsApiService {
        List<Groups> groupsList=groupsRepository.findAll();
        List<GroupResponse> groupResponseList=new ArrayList<>();
        groupsList.forEach(group -> {
-           groupResponseList.add(GroupResponseMapper.INSTANCE.groupsToGroupResponse(group));
+           groupResponseList.add(GroupResponseMapper.INSTANCE.entityToDTO(group));
        });
        return groupResponseList;
    }
